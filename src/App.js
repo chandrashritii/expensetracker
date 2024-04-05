@@ -1,14 +1,17 @@
 import React from 'react';
 import Expenses from './components/Expenses';
 import Form from './components/Form';
+import {ToastContainer} from 'react-toastify';
+import './App.css';
 
 function App() {
   return (
-    <div style={{width: '60%', margin: 'auto'}}>
-      <h3> New expense</h3>
+    <div className="App" style={{ width: '70%', margin: 'auto', marginTop: '20px' }}>
+      <ToastContainer />
+      <h3>Monthly Expenses</h3>
       <Form />
-      <h3>Expenses</h3>
-     <Expenses />
+      <hr />
+      <Expenses />
     </div>
   );
 }

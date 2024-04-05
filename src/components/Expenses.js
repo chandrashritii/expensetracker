@@ -14,7 +14,7 @@ export default () => {
     }, []);
 
     return expenses.map(e => 
-        <div style={{ marginBottom: '1rem'}}>  
+        <div key={e.id} style={{ marginBottom: '1rem'}}>  
             <TableExpenses expense={e} />
         </div>
     )
